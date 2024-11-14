@@ -7,7 +7,8 @@ export default function Navbar() {
         {/* Logo */}
            {/* Navbar Links */}
         <div className="hidden md:flex space-x-6">
-          <Link href="home">
+          <Link href="#home">
+
             <span className="text-white  hover:text-gray-300 transition duration-300">Home</span>
           </Link>
           <Link href="/about">
@@ -19,7 +20,8 @@ export default function Navbar() {
           <Link href="services">
             <span className="text-white hover:text-gray-300 transition duration-300">Services</span>
           </Link>
-          <Link href="display">
+          <Link href="/display">
+
             <span className="text-white hover:text-gray-300 transition duration-300">Display</span>
           </Link>
         </div>

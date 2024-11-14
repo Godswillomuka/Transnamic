@@ -3,8 +3,9 @@
 import Fleets from "./fleets/page";
 import Link from "next/link";
 import Image from "next/image";
-import { Briefcase, LogIn } from "lucide-react";
+
 import SignUp from "./signin/page";
+
 
 
 
@@ -19,8 +20,13 @@ export default function Home() {
           
           <Fleets />
           <Image />
-          <Briefcase />
-          <LogIn />
+          
+          
+         
+          {/* <DisplayVehicles /> */}
+          
+         
+
           
           
       
@@ -29,7 +35,9 @@ export default function Home() {
         </div>
       </nav>
     </div>
+    
 
   );
 }
+
 
