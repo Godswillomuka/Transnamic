@@ -11,13 +11,13 @@ export default function Navbar() {
 
             <span className="text-white  hover:text-gray-300 transition duration-300">Home</span>
           </Link>
-          <Link href="/about">
-            <span className="text-white hover:text-gray-300 transition duration-300">About Us</span>
+          <Link href="/AboutUs">
+            <span className="text-white hover:text-gray-300 transition duration-300">AboutUs</span>
           </Link>
           <Link href="contact">
             <span className="text-white hover:text-gray-300 transition duration-300">Contact</span>
           </Link>
-          <Link href="services">
+          <Link href="/Services">
             <span className="text-white hover:text-gray-300 transition duration-300">Services</span>
           </Link>
           <Link href="/display">
@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Auth Links (Sign In, Login) */}
         <div className="hidden md:flex space-x-4">
           <Link href="/signin">
-            <span className="text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md transition duration-300 bg-green-600 m-2">Sign In</span>
+            <span className="text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md transition duration-300 bg-green-600 m-2">Sign Up</span>
           </Link>
           <Link href="login">
             <span className="text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md transition duration-300 bg-red-500">Login</span>

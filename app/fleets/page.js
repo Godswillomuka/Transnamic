@@ -1,23 +1,20 @@
 import React from "react";
 import Image from "next/image"; // Import Image component from Next.js
-
 import Navbar from "@/components/Navbar";
 
 export default function Fleets() {
   return (
     <div>
-      
       <Navbar />
-      <div className="py-24 bg-gray-600">
+      <div className="bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 min-h-screen py-12">
         <h4 className="uppercase font-semibold text-center mb-1 text-white">
-          Let's go get us
+          Let's go get the ride
         </h4>
         <h2 className="poppins text-center font-semi text-5xl mt-5">
           Choose your Taxi to ride!
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-
           {/* First Fleet Card */}
           <div className="bg-[#111113] shadow-md rounded-md flex flex-col">
             <div className="relative w-full h-48">
@@ -38,7 +35,7 @@ export default function Fleets() {
               <div className="mt-2 text-white p-1">
                 <p>2 large, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -62,7 +59,7 @@ export default function Fleets() {
               <div className="mt-2 text-white p-1">
                 <p>5 large Briefcases, 8 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -86,7 +83,7 @@ export default function Fleets() {
                 <p>5 passengers, 2 comfortable</p>
                 <p>3 large Briefcases, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -110,7 +107,7 @@ export default function Fleets() {
                 <p>5 passengers, 2 comfortable</p>
                 <p>5 large, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -134,7 +131,7 @@ export default function Fleets() {
                 <p>2 passengers, 2 comfortable</p>
                 <p>2 large Briefcases, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -158,7 +155,7 @@ export default function Fleets() {
                 <p>2 passengers, 2 comfortable</p>
                 <p>2 large Briefcases, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
@@ -182,17 +179,18 @@ export default function Fleets() {
                 <p>2 passengers, 2 comfortable</p>
                 <p>2 large Briefcases, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
           </div>
 
+          {/* Eighth Fleet Card (G-Class) */}
           <div className="bg-[#1f2125] shadow-md rounded-md flex flex-col">
             <div className="relative w-full h-48">
               <Image
                 src="/G-Class.jpeg"
-                alt="Range"
+                alt="G-Class"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-t-md"
@@ -200,17 +198,16 @@ export default function Fleets() {
             </div>
             <div className="p-5 flex flex-col items-start">
               <h3 className="poppins mb-1 text-xl text-white">Premium Class</h3>
-              <p className="text-white">Range Series / Similar</p>
+              <p className="text-white">G-Class Series / Similar</p>
               <div className="mt-2 text-white p-1">
                 <p>2 passengers, 2 comfortable</p>
                 <p>2 large Briefcases, 2 small bags</p>
               </div>
-              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2 w-fit text-white text-center">
+              <div className="mt-5 bg-red-500 hover:bg-gray-700 py-2.5 px-5 text-white text-center rounded-lg">
                 Book Now
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
