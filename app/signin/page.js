@@ -14,7 +14,8 @@ export default function SignUp() {
   const [dob, setDob] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  // Handle form submission
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Basic validation to check if passwords match
@@ -23,31 +24,53 @@ export default function SignUp() {
       return;
     }
 
-    // Basic validation for required fields (First Name, Last Name, etc.)
+    // Basic validation for required fields
     if (!firstName || !lastName || !contact || !idNumber || !dob) {
       setError('Please fill in all fields');
       return;
     }
 
-    // Here you can handle the signup logic, like sending a request to an API
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('First Name:', firstName);
-    console.log('Last Name:', lastName);
-    console.log('Contact:', contact);
-    console.log('ID Number:', idNumber);
-    console.log('Date of Birth:', dob);
+    // Create user object to send to the backend
+    const newUser = {
+      name: `${firstName} ${lastName}`,
+      email: email,
+      phone: contact,
+      role: 'customer',  // Or set dynamically if needed
+      password_hash: password, // Store hashed password in a real app (not recommended to store plain text)
+      created_at: new Date().toISOString(),
+    };
 
-    // Clear the error and fields upon successful form submission
-    setError('');
-    setEmail('');
-    setPassword('');
-    setConfirmPassword('');
-    setFirstName('');
-    setLastName('');
-    setContact('');
-    setIdNumber('');
-    setDob('');
+    try {
+      // Send POST request to create a new user in the db.json
+      const response = await fetch('http://localhost:5000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newUser),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('User created successfully:', data);
+        
+        // Clear form fields and error state on success
+        setError('');
+        setEmail('');
+        setPassword('');
+        setConfirmPassword('');
+        setFirstName('');
+        setLastName('');
+        setContact('');
+        setIdNumber('');
+        setDob('');
+      } else {
+        const errorData = await response.json();
+        setError('Failed to create user: ' + errorData.message);
+      }
+    } catch (error) {
+      setError('An error occurred: ' + error.message);
+    }
   };
 
   return (
