@@ -1,0 +1,524 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "name": "John Doe",
+      "email": "johndoe@email.com",
+      "phone": "+123456789",
+      "role": "customer",
+      "password_hash": "hashed_password_123",
+      "created_at": "2024-01-15T08:30:00Z",
+      "id": "2a8d"
+    },
+    {
+      "user_id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@email.com",
+      "phone": "+987654321",
+      "role": "owner",
+      "password_hash": "hashed_password_456",
+      "created_at": "2024-02-10T09:00:00Z",
+      "id": "83fe"
+    },
+    {
+      "id": "ecb6",
+      "name": "GOD'SWILL OMUKA",
+      "email": "omukagodswil@gmail.com",
+      "phone": "0729489713",
+      "role": "customer",
+      "password_hash": "$2a$10$mUTmT9pPidsRiYSoFKvFGuFi7MMCHQnk78K/kGZFCzEP97TqTIDc2",
+      "created_at": "2024-11-15T23:38:23.174Z"
+    },
+    {
+      "id": "3a06",
+      "name": "GOD'SWILL zilla",
+      "email": "omukagodswil@gmail.com",
+      "phone": "0729489713",
+      "role": "customer",
+      "password_hash": "$2a$10$jmR3baxXbE9U7Yz0YRdwpuIBNMGxDXXKNf6y3OJnIIsZowkGWscry",
+      "created_at": "2024-11-16T01:59:03.899Z"
+    },
+    {
+      "id": "a70b",
+      "name": "GOD'SWILL OMUKA",
+      "email": "omukagodswil@gmail.com",
+      "phone": "0729489713",
+      "role": "customer",
+      "password_hash": "$2a$10$8W2GKMMvyE2g95SYGXLi2.vyRJ0CBcvw8X0ET6wuRKCD48QA2iJz.",
+      "created_at": "2024-11-16T05:32:48.923Z"
+    },
+    {
+      "id": "459d",
+      "name": "shadrack kipkemei",
+      "email": "john@moringaschool.com",
+      "phone": "0729489716",
+      "role": "customer",
+      "password_hash": "$2a$10$Nyy/UjHjgAlzO/.TC3E..eelV8dZWalSEL9Ven7xV8PAVrzMhGI1W",
+      "created_at": "2024-11-16T06:35:27.894Z"
+    }
+  ],
+  "cars": [
+    {
+      "car_id": 1,
+      "owner_id": 2,
+      "make": "BMW",
+      "model": "M3",
+      "year": 2023,
+      "price_per_day": 120,
+      "location": "New York, NY",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        },
+        {
+          "date": "2024-11-17",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/5381501/pexels-photo-5381501.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Leather Seats",
+        "Sunroof",
+        "GPS",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [
+        {
+          "review_id": 1,
+          "user_id": 1,
+          "rating": 5,
+          "comment": "Awesome car, handles like a dream!",
+          "created_at": "2024-11-12T10:00:00Z"
+        }
+      ],
+      "insurance_required": true,
+      "id": "7c50"
+    },
+    {
+      "car_id": 2,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Prado TZG",
+      "year": 2020,
+      "price_per_day": 80,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/11114270/pexels-photo-11114270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://carsoko.co.ke/assets/img/product/CSLN17210265610.jpg"
+      ],
+      "features": [
+        "4WD",
+        "Roof Racks",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        4,
+        5,
+        4
+      ],
+      "reviews": [
+        {
+          "review_id": 2,
+          "user_id": 1,
+          "rating": 4,
+          "comment": "Great off-roading car, perfect for trips!",
+          "created_at": "2024-11-13T09:00:00Z"
+        }
+      ],
+      "insurance_required": true,
+      "id": "d563"
+    },
+    {
+      "car_id": 3,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Prado TX",
+      "year": 2021,
+      "price_per_day": 75,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://carsoko.co.ke/assets/img/product/CSLN17237994660.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_OYjxqxYuDoE_wg9AqTL2YcifB-UQHAim2g&s"
+      ],
+      "features": [
+        "4WD",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "3ba9"
+    },
+    {
+      "car_id": 4,
+      "owner_id": 2,
+      "make": "Nissan",
+      "model": "Titan",
+      "year": 2022,
+      "price_per_day": 90,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/2990837/pexels-photo-2990837.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/12446377/pexels-photo-12446377.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "4WD",
+        "Tow Package",
+        "Bluetooth",
+        "Leather Seats"
+      ],
+      "ratings": [
+        4,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "149c"
+    },
+    {
+      "car_id": 5,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Allion A18",
+      "year": 2021,
+      "price_per_day": 60,
+      "location": "San Francisco, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/28921444/pexels-photo-28921444/free-photo-of-sleek-blue-sports-car-on-suburban-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/28921444/pexels-photo-28921444/free-photo-of-sleek-blue-sports-car-on-suburban-road.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Bluetooth",
+        "GPS",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        4,
+        4,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": false,
+      "id": "8959"
+    },
+    {
+      "car_id": 6,
+      "owner_id": 2,
+      "make": "Lexus",
+      "model": "LX600",
+      "year": 2023,
+      "price_per_day": 150,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/19185904/pexels-photo-19185904/free-photo-of-lexus-rx-parked-in-front-of-the-hotel-entrance-at-night.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/16484677/pexels-photo-16484677/free-photo-of-white-lexus-is-in-garage.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Leather Seats",
+        "Heated Seats",
+        "Sunroof",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "f9c4"
+    },
+    {
+      "car_id": 7,
+      "owner_id": 2,
+      "make": "Jeep 2024",
+      "model": "Jeep",
+      "year": 2022,
+      "price_per_day": 70,
+      "location": "Seattle, WA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/29381732/pexels-photo-29381732/free-photo-of-red-jeep-wrangler-on-snowy-terrain-in-winter.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/29380876/pexels-photo-29380876/free-photo-of-luxury-suv-at-sunset-by-a-serene-lake.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Air Conditioning",
+        "Automatic Transmission",
+        "Bluetooth"
+      ],
+      "ratings": [
+        4,
+        5,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": false,
+      "id": "bf34"
+    },
+    {
+      "car_id": 8,
+      "owner_id": 2,
+      "make": "Benz",
+      "model": "Mad 450d",
+      "year": 2021,
+      "price_per_day": 100,
+      "location": "Seattle, WA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/29380837/pexels-photo-29380837/free-photo-of-luxury-car-parked-on-quaint-village-street.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/18108322/pexels-photo-18108322/free-photo-of-3d-3d-render.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Leather Seats",
+        "Sunroof",
+        "Bluetooth",
+        "GPS"
+      ],
+      "ratings": [
+        5,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "d802"
+    },
+    {
+      "car_id": 9,
+      "owner_id": 2,
+      "make": "Volvo",
+      "model": "XC90",
+      "year": 2021,
+      "price_per_day": 110,
+      "location": "San Francisco, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/28955247/pexels-photo-28955247/free-photo-of-volvo-driving-through-autumn-tree-tunnel-in-sweden.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/17177908/pexels-photo-17177908/free-photo-of-volvo-xc90-car.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Leather Seats",
+        "GPS",
+        "Bluetooth",
+        "Heated Seats"
+      ],
+      "ratings": [
+        5,
+        5,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "1483"
+    },
+    {
+      "car_id": 10,
+      "owner_id": 2,
+      "make": "Ram",
+      "model": "1500",
+      "year": 2023,
+      "price_per_day": 100,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/14903319/pexels-photo-14903319.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/29043800/pexels-photo-29043800/free-photo-of-red-ram-truck-with-black-rims-in-industrial-setting.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Leather Seats",
+        "Tow Package",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "b573"
+    },
+    {
+      "car_id": 11,
+      "owner_id": 2,
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2022,
+      "price_per_day": 95,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/14325401/pexels-photo-14325401.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/10905500/pexels-photo-10905500.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ],
+      "features": [
+        "Tow Package",
+        "Leather Seats",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "8493"
+    }
+  ],
+  "bookings": [
+    {
+      "booking_id": 1,
+      "customer_id": 1,
+      "car_id": 1,
+      "start_date": "2024-11-15T09:00:00Z",
+      "end_date": "2024-11-16T09:00:00Z",
+      "total_price": 120,
+      "payment_status": "completed",
+      "status": "confirmed",
+      "created_at": "2024-11-14T09:00:00Z",
+      "id": "d787"
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": 1,
+      "user_id": 1,
+      "car_id": 1,
+      "rating": 5,
+      "comment": "Awesome car, handles like a dream!",
+      "created_at": "2024-11-15T10:00:00Z",
+      "id": "3601"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 1,
+      "user_id": 1,
+      "amount": 120,
+      "payment_method": "credit_card",
+      "payment_status": "completed",
+      "payment_date": "2024-11-14T10:00:00Z",
+      "id": "7658"
+    }
+  ]
+}
