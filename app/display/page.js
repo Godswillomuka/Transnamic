@@ -20,7 +20,7 @@ const CarsPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-800 min-h-screen py-5">
+    <div className="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-800 min-h-screen py-12 px-5">
     <Navbar />
       <h1 className="text-2xl font-bold mb-6">Available Cars</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
