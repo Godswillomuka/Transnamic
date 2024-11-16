@@ -21,7 +21,7 @@ const CarsPage = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 min-h-screen bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 py-12">
       <h1 className="text-2xl font-bold mb-6">Available Cars</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {cars.map((car) => (
