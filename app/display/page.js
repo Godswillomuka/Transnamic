@@ -76,23 +76,25 @@ const CarsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 py-12 px-4">
       <Navbar />
-      <h1 className="text-2xl font-bold mb-6 text-black-500">Available Cars</h1>
+      
+      {/* Page Title */}
+      <h1 className="text-3xl font-bold text-center text-white mb-8">Available Cars</h1>
 
       {/* Search Section */}
-      <div className="mb-8">
-        <form onSubmit={handleSearch} className="flex justify-center space-x-4">
+      <div className="flex justify-center mb-8">
+        <form onSubmit={handleSearch} className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
           <input
             type="text"
             placeholder="Search by make, model, year"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="px-4 py-2 rounded-lg border border-gray-300"
+            className="w-full p-3 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
           />
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg"
+            className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
           >
             Search
           </button>
@@ -100,100 +102,113 @@ const CarsPage = () => {
       </div>
 
       {/* Add Car Form */}
-      <div className="mb-8">
-        <h2 className="text-xl font-semibold text-black-500 mb-4">Add a New Car</h2>
-        <form onSubmit={handleAddCar} className="space-y-4">
-          <div>
-            <label htmlFor="url" className="block text-black-500">Car URL</label>
-            <input
-              type="url"
-              id="url"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-12">
+        <h2 className="text-2xl font-semibold text-gray-700 mb-6">Add a New Car</h2>
+        <form onSubmit={handleAddCar} className="space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="url" className="block text-gray-700">Car URL</label>
+              <input
+                type="url"
+                id="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="carType" className="block text-gray-700">Car Type</label>
+              <input
+                type="text"
+                id="carType"
+                value={carType}
+                onChange={(e) => setCarType(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="carType" className="block text-black-500">Car Type</label>
-            <input
-              type="text"
-              id="carType"
-              value={carType}
-              onChange={(e) => setCarType(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="carMake" className="block text-gray-700">Car Make</label>
+              <input
+                type="text"
+                id="carMake"
+                value={carMake}
+                onChange={(e) => setCarMake(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="carModel" className="block text-gray-700">Car Model</label>
+              <input
+                type="text"
+                id="carModel"
+                value={carModel}
+                onChange={(e) => setCarModel(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="carMake" className="block text-black-500">Car Make</label>
-            <input
-              type="text"
-              id="carMake"
-              value={carMake}
-              onChange={(e) => setCarMake(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="carYear" className="block text-gray-700">Car Year</label>
+              <input
+                type="number"
+                id="carYear"
+                value={carYear}
+                onChange={(e) => setCarYear(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="carLocation" className="block text-gray-700">Car Location</label>
+              <input
+                type="text"
+                id="carLocation"
+                value={carLocation}
+                onChange={(e) => setCarLocation(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="carModel" className="block text-black-500">Car Model</label>
-            <input
-              type="text"
-              id="carModel"
-              value={carModel}
-              onChange={(e) => setCarModel(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="pricePerDay" className="block text-gray-700">Price Per Day ($)</label>
+              <input
+                type="number"
+                id="pricePerDay"
+                value={pricePerDay}
+                onChange={(e) => setPricePerDay(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="features" className="block text-gray-700">Features</label>
+              <input
+                type="text"
+                id="features"
+                value={features}
+                onChange={(e) => setFeatures(e.target.value)}
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                placeholder="Comma separated"
+                required
+              />
+            </div>
           </div>
-          <div>
-            <label htmlFor="carYear" className="block text-black-500">Car Year</label>
-            <input
-              type="number"
-              id="carYear"
-              value={carYear}
-              onChange={(e) => setCarYear(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="carLocation" className="block text-black-500">Car Location</label>
-            <input
-              type="text"
-              id="carLocation"
-              value={carLocation}
-              onChange={(e) => setCarLocation(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="pricePerDay" className="block text-black-500">Price Per Day ($)</label>
-            <input
-              type="number"
-              id="pricePerDay"
-              value={pricePerDay}
-              onChange={(e) => setPricePerDay(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="features" className="block text-black-500">Features (comma separated)</label>
-            <input
-              type="text"
-              id="features"
-              value={features}
-              onChange={(e) => setFeatures(e.target.value)}
-              className="mt-2 block w-full px-4 py-2 rounded-lg border border-gray-300"
-              required
-            />
-          </div>
+
           <button
             type="submit"
-            className="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg"
+            className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
           >
             Add Car
           </button>
@@ -201,25 +216,24 @@ const CarsPage = () => {
       </div>
 
       {/* Display Cars */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {cars.map((car) => (
-          <div key={car.car_id} className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition">
+          <div key={car.car_id} className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition">
             <Image
               src={car.images?.[0] || '/placeholder.png'} // Fallback to placeholder image
               alt={`${car.make} ${car.model}`}
               width={300}
               height={200}
-              className="rounded-md object-cover"
+              className="rounded-lg object-cover"
             />
-            <h2 className="text-lg font-semibold mt-2 text-black-500">
+            <h2 className="text-xl font-semibold mt-4 text-black-500">
               {car.make} {car.model}
             </h2>
             <p className="text-sm text-black-500">Year: {car.year}</p>
             <p className="text-sm text-black-500">Location: {car.location}</p>
-            <p className="text-sm text-gray-600">
-              Price/Day: ${car.price_per_day}
-            </p>
-            <div className="mt-2">
+            <p className="text-sm text-gray-600">Price/Day: ${car.price_per_day}</p>
+
+            <div className="mt-4">
               <p className="text-sm font-medium">Features:</p>
               <ul className="text-sm text-gray-700 list-disc list-inside">
                 {car.features?.slice(0, 3).map((feature, index) => (
@@ -227,9 +241,12 @@ const CarsPage = () => {
                 ))}
               </ul>
             </div>
+
             <button
-              className={`mt-4 px-4 py-2 rounded transition ${
-                rentedCars[car.car_id] ? 'bg-gray-500 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600 text-white'
+              className={`mt-6 w-full py-2 rounded-lg transition ${
+                rentedCars[car.car_id]
+                  ? 'bg-gray-500 cursor-not-allowed'
+                  : 'bg-blue-500 hover:bg-blue-600 text-white'
               }`}
               onClick={() => handleRentClick(car.car_id)}
               disabled={rentedCars[car.car_id]}
