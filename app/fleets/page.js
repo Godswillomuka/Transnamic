@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image"; // Import Image component from Next.js
 import Navbar from "@/components/Navbar";
 

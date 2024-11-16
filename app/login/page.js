@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // Importing useRouter to navigate after login
 import Navbar from "@/components/Navbar"; // Import your Navbar component (if you have one)
