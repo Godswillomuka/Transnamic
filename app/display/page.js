@@ -103,11 +103,11 @@ const CarsPage = () => {
 
       {/* Add Car Form */}
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-12">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-6">Add a New Car</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Add a New Car</h2>
         <form onSubmit={handleAddCar} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="url" className="block text-gray-700">Car URL</label>
+              <label htmlFor="url" className="block text-gray-900">Car URL</label>
               <input
                 type="url"
                 id="url"
@@ -118,7 +118,7 @@ const CarsPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="carType" className="block text-gray-700">Car Type</label>
+              <label htmlFor="carType" className="block text-gray-900">Car Type</label>
               <input
                 type="text"
                 id="carType"
@@ -132,7 +132,7 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="carMake" className="block text-gray-700">Car Make</label>
+              <label htmlFor="carMake" className="block text-gray-900">Car Make</label>
               <input
                 type="text"
                 id="carMake"
@@ -143,7 +143,7 @@ const CarsPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="carModel" className="block text-gray-700">Car Model</label>
+              <label htmlFor="carModel" className="block text-gray-900">Car Model</label>
               <input
                 type="text"
                 id="carModel"
@@ -157,7 +157,7 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="carYear" className="block text-gray-700">Car Year</label>
+              <label htmlFor="carYear" className="block text-gray-900">Car Year</label>
               <input
                 type="number"
                 id="carYear"
@@ -168,7 +168,7 @@ const CarsPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="carLocation" className="block text-gray-700">Car Location</label>
+              <label htmlFor="carLocation" className="block text-gray-900">Car Location</label>
               <input
                 type="text"
                 id="carLocation"
@@ -182,7 +182,7 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="pricePerDay" className="block text-gray-700">Price Per Day ($)</label>
+              <label htmlFor="pricePerDay" className="block text-gray-900">Price Per Day ($)</label>
               <input
                 type="number"
                 id="pricePerDay"
@@ -193,7 +193,7 @@ const CarsPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="features" className="block text-gray-700">Features</label>
+              <label htmlFor="features" className="block text-gray-900">Features</label>
               <input
                 type="text"
                 id="features"
@@ -226,15 +226,15 @@ const CarsPage = () => {
               height={200}
               className="rounded-lg object-cover"
             />
-            <h2 className="text-xl font-semibold mt-4 text-black-500">
+            <h2 className="text-xl font-semibold mt-4 text-gray-900">
               {car.make} {car.model}
             </h2>
-            <p className="text-sm text-black-500">Year: {car.year}</p>
-            <p className="text-sm text-black-500">Location: {car.location}</p>
-            <p className="text-sm text-gray-600">Price/Day: ${car.price_per_day}</p>
+            <p className="text-sm text-gray-700">Year: {car.year}</p>
+            <p className="text-sm text-gray-700">Location: {car.location}</p>
+            <p className="text-sm text-gray-700">Price/Day: ${car.price_per_day}</p>
 
             <div className="mt-4">
-              <p className="text-sm font-medium">Features:</p>
+              <p className="text-sm font-medium text-gray-900">Features:</p>
               <ul className="text-sm text-gray-700 list-disc list-inside">
                 {car.features?.slice(0, 3).map((feature, index) => (
                   <li key={index}>{feature}</li>
