@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-// import bcrypt from 'bcryptjs'; // A library to hash the password
+import bcrypt from 'bcryptjs'; // A library to hash the password
 
 export default function SignUp() {
   // State for form fields
@@ -31,7 +31,7 @@ export default function SignUp() {
     }
 
     // Password hashing (this should be done on the server in a production app)
-    //const hashedPassword = bcrypt.hashSync(password, 10);
+    const hashedPassword = bcrypt.hashSync(password, 10);
 
     // Create user object to send to the backend
     const newUser = {
@@ -39,7 +39,7 @@ export default function SignUp() {
       email: email,
       phone: contact,
       role: role,
-      //password_hash: hashedPassword, // Storing the hashed password
+      password_hash: hashedPassword, // Storing the hashed password
       created_at: new Date().toISOString(),
     };
 
