@@ -39,8 +39,8 @@ const CarsPage = () => {
             <h2 className="text-lg font-semibold mt-2">
               {car.make} {car.model}
             </h2>
-            <p className="text-sm text-gray-600">Year: {car.year}</p>
-            <p className="text-sm text-gray-600">Location: {car.location}</p>
+            <p className="text-sm text-black-500">Year: {car.year}</p>
+            <p className="text-sm text-black-500">Location: {car.location}</p>
             <p className="text-sm text-gray-600">
               Price/Day: ${car.price_per_day}
             </p>
