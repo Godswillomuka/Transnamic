@@ -3,14 +3,20 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const CarsPage = () => {
-  const [cars, setCars] = useState([]); 
+  const [cars, setCars] = useState([]); // Initialize as an empty array
+  const [rentedCars, setRentedCars] = useState({}); // Track rented status for cars
 
   useEffect(() => {
-    fetch('http://localhost:3000/cars') 
+    fetch('http://localhost:3000/cars') // Replace with your actual API endpoint
       .then((response) => response.json())
       .then((data) => setCars(data))
       .catch((error) => console.error('Error fetching cars:', error));
   }, []);
+
+  // Handle Rent Now button click
+  const handleRentClick = (carId) => {
+    setRentedCars((prev) => ({ ...prev, [carId]: true }));
+  };
 
   return (
     <div className="container mx-auto p-4">
@@ -44,8 +50,16 @@ const CarsPage = () => {
                 ))}
               </ul>
             </div>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-              Rent Now
+            <button
+              className={`mt-4 px-4 py-2 rounded transition ${
+                rentedCars[car.car_id]
+                  ? 'bg-gray-500 cursor-not-allowed'
+                  : 'bg-blue-500 hover:bg-blue-600 text-white'
+              }`}
+              onClick={() => handleRentClick(car.car_id)}
+              disabled={rentedCars[car.car_id]}
+            >
+              {rentedCars[car.car_id] ? 'Rented' : 'Rent Now'}
             </button>
           </div>
         ))}
@@ -55,4 +69,3 @@ const CarsPage = () => {
 };
 
 export default CarsPage;
-
