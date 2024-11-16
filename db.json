@@ -54,8 +54,9 @@
         }
       ],
       "images": [
-        "https://example.com/bmw_m3_1.jpg",
-        "https://example.com/bmw_m3_2.jpg"
+    "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600",
+
+    "https://images.pexels.com/photos/5381501/pexels-photo-5381501.jpeg?auto=compress&cs=tinysrgb&w=600"
       ],
       "features": [
         "Leather Seats",
@@ -100,8 +101,8 @@
         }
       ],
       "images": [
-        "https://example.com/toyota_prado_tzg_1.jpg",
-        "https://example.com/toyota_prado_tzg_2.jpg"
+          "https://images.pexels.com/photos/11114270/pexels-photo-11114270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://carsoko.co.ke/assets/img/product/CSLN17210265610.jpg"
       ],
       "features": [
         "4WD",
@@ -145,8 +146,8 @@
         }
       ],
       "images": [
-        "https://example.com/toyota_prado_tx_1.jpg",
-        "https://example.com/toyota_prado_tx_2.jpg"
+          "https://carsoko.co.ke/assets/img/product/CSLN17237994660.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_OYjxqxYuDoE_wg9AqTL2YcifB-UQHAim2g&s"
       ],
       "features": [
         "4WD",
@@ -181,8 +182,8 @@
         }
       ],
       "images": [
-        "https://example.com/nissan_titan_1.jpg",
-        "https://example.com/nissan_titan_2.jpg"
+           "https://images.pexels.com/photos/2990837/pexels-photo-2990837.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/12446377/pexels-photo-12446377.jpeg?auto=compress&cs=tinysrgb&w=600"
       ],
       "features": [
         "4WD",
@@ -218,8 +219,8 @@
         }
       ],
       "images": [
-        "https://example.com/toyota_allion_1.jpg",
-        "https://example.com/toyota_allion_2.jpg"
+        "https://images.pexels.com/photos/28921444/pexels-photo-28921444/free-photo-of-sleek-blue-sports-car-on-suburban-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+         "https://images.pexels.com/photos/28921444/pexels-photo-28921444/free-photo-of-sleek-blue-sports-car-on-suburban-road.jpeg?auto=compress&cs=tinysrgb&w=600"
       ],
       "features": [
         "Bluetooth",
@@ -254,8 +255,8 @@
         }
       ],
       "images": [
-        "https://example.com/lexus_lx600_1.jpg",
-        "https://example.com/lexus_lx600_2.jpg"
+          "https://images.pexels.com/photos/19185904/pexels-photo-19185904/free-photo-of-lexus-rx-parked-in-front-of-the-hotel-entrance-at-night.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/16484677/pexels-photo-16484677/free-photo-of-white-lexus-is-in-garage.jpeg?auto=compress&cs=tinysrgb&w=600"
       ],
       "features": [
         "Leather Seats",
@@ -274,189 +275,110 @@
       "id": "f9c4"
     },
     {
-      "car_id": 7,
-      "owner_id": 2,
-      "make": "Toyota",
-      "model": "Noah",
-      "year": 2022,
-      "price_per_day": 70,
-      "location": "Seattle, WA",
-      "availability": [
-        {
-          "date": "2024-11-15",
-          "available": true
-        },
-        {
-          "date": "2024-11-16",
-          "available": true
-        }
-      ],
-      "images": [
-        "https://example.com/toyota_noah_1.jpg",
-        "https://example.com/toyota_noah_2.jpg"
-      ],
-      "features": [
-        "Air Conditioning",
-        "Automatic Transmission",
-        "Bluetooth"
-      ],
-      "ratings": [
-        4,
-        5,
-        4
-      ],
-      "reviews": [],
-      "insurance_required": false,
-      "id": "0374"
-    },
-    {
-      "car_id": 8,
-      "owner_id": 2,
-      "make": "Toyota",
-      "model": "Alphard",
-      "year": 2021,
-      "price_per_day": 100,
-      "location": "Seattle, WA",
-      "availability": [
-        {
-          "date": "2024-11-15",
-          "available": true
-        },
-        {
-          "date": "2024-11-16",
-          "available": true
-        }
-      ],
-      "images": [
-        "https://example.com/toyota_alphard_1.jpg",
-        "https://example.com/toyota_alphard_2.jpg"
-      ],
-      "features": [
-        "Leather Seats",
-        "Sunroof",
-        "Bluetooth",
-        "GPS"
-      ],
-      "ratings": [
-        5,
-        5,
-        5
-      ],
-      "reviews": [],
-      "insurance_required": true,
-      "id": "a235"
-    },
-    {
-      "car_id": 9,
-      "owner_id": 2,
-      "make": "Volvo",
-      "model": "XC90",
-      "year": 2021,
-      "price_per_day": 110,
-      "location": "San Francisco, CA",
-      "availability": [
-        {
-          "date": "2024-11-15",
-          "available": true
-        },
-        {
-          "date": "2024-11-16",
-          "available": false
-        }
-      ],
-      "images": [
-        "https://example.com/volvo_xc90_1.jpg",
-        "https://example.com/volvo_xc90_2.jpg"
-      ],
-      "features": [
-        "Leather Seats",
-        "GPS",
-        "Bluetooth",
-        "Heated Seats"
-      ],
-      "ratings": [
-        5,
-        5,
-        4
-      ],
-      "reviews": [],
-      "insurance_required": true,
-      "id": "082e"
-    },
-    {
-      "car_id": 10,
-      "owner_id": 2,
-      "make": "Ram",
-      "model": "1500",
-      "year": 2023,
-      "price_per_day": 100,
-      "location": "Texas, TX",
-      "availability": [
-        {
-          "date": "2024-11-15",
-          "available": true
-        },
-        {
-          "date": "2024-11-16",
-          "available": true
-        }
-      ],
-      "images": [
-        "https://example.com/ram_1500_1.jpg",
-        "https://example.com/ram_1500_2.jpg"
-      ],
-      "features": [
-        "Leather Seats",
-        "Tow Package",
-        "Bluetooth",
-        "4WD"
-      ],
-      "ratings": [
-        5,
-        4,
-        5
-      ],
-      "reviews": [],
-      "insurance_required": true,
-      "id": "de08"
-    },
-    {
-      "car_id": 11,
-      "owner_id": 2,
-      "make": "Ford",
-      "model": "F-150",
-      "year": 2022,
-      "price_per_day": 95,
-      "location": "Texas, TX",
-      "availability": [
-        {
-          "date": "2024-11-15",
-          "available": true
-        },
-        {
-          "date": "2024-11-16",
-          "available": false
-        }
-      ],
-      "images": [
-        "https://example.com/ford_f150_1.jpg",
-        "https://example.com/ford_f150_2.jpg"
-      ],
-      "features": [
-        "Tow Package",
-        "Leather Seats",
-        "Bluetooth",
-        "4WD"
-      ],
-      "ratings": [
-        5,
-        4,
-        5
-      ],
-      "reviews": [],
-      "insurance_required": true,
-      "id": "c280"
-    }
+        "car_id": 7,
+        "owner_id": 2,
+        "make": "Jeep 2024",
+        "model": "Jeep",
+        "year": 2022,
+        "price_per_day": 70,
+        "location": "Seattle, WA",
+        "availability": [
+          {"date": "2024-11-15", "available": true},
+          {"date": "2024-11-16", "available": true}
+        ],
+        "images": [
+          "https://images.pexels.com/photos/29381732/pexels-photo-29381732/free-photo-of-red-jeep-wrangler-on-snowy-terrain-in-winter.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/29380876/pexels-photo-29380876/free-photo-of-luxury-suv-at-sunset-by-a-serene-lake.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "features": ["Air Conditioning", "Automatic Transmission", "Bluetooth"],
+        "ratings": [4, 5, 4],
+        "reviews": [],
+        "insurance_required": false
+      },
+      {
+        "car_id": 8,
+        "owner_id": 2,
+        "make": "Benz",
+        "model": "Mad 450d",
+        "year": 2021,
+        "price_per_day": 100,
+        "location": "Seattle, WA",
+        "availability": [
+          {"date": "2024-11-15", "available": true},
+          {"date": "2024-11-16", "available": true}
+        ],
+        "images": [
+          "https://images.pexels.com/photos/29380837/pexels-photo-29380837/free-photo-of-luxury-car-parked-on-quaint-village-street.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/18108322/pexels-photo-18108322/free-photo-of-3d-3d-render.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "features": ["Leather Seats", "Sunroof", "Bluetooth", "GPS"],
+        "ratings": [5, 5, 5],
+        "reviews": [],
+        "insurance_required": true
+      },
+      {
+        "car_id": 9,
+        "owner_id": 2,
+        "make": "Volvo",
+        "model": "XC90",
+        "year": 2021,
+        "price_per_day": 110,
+        "location": "San Francisco, CA",
+        "availability": [
+          {"date": "2024-11-15", "available": true},
+          {"date": "2024-11-16", "available": false}
+        ],
+        "images": [
+          "https://images.pexels.com/photos/28955247/pexels-photo-28955247/free-photo-of-volvo-driving-through-autumn-tree-tunnel-in-sweden.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://images.pexels.com/photos/17177908/pexels-photo-17177908/free-photo-of-volvo-xc90-car.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "features": ["Leather Seats", "GPS", "Bluetooth", "Heated Seats"],
+        "ratings": [5, 5, 4],
+        "reviews": [],
+        "insurance_required": true
+      },
+      {
+        "car_id": 10,
+        "owner_id": 2,
+        "make": "Ram",
+        "model": "1500",
+        "year": 2023,
+        "price_per_day": 100,
+        "location": "Texas, TX",
+        "availability": [
+          {"date": "2024-11-15", "available": true},
+          {"date": "2024-11-16", "available": true}
+        ],
+        "images": [
+          "https://images.pexels.com/photos/14903319/pexels-photo-14903319.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/29043800/pexels-photo-29043800/free-photo-of-red-ram-truck-with-black-rims-in-industrial-setting.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "features": ["Leather Seats", "Tow Package", "Bluetooth", "4WD"],
+        "ratings": [5, 4, 5],
+        "reviews": [],
+        "insurance_required": true
+      },
+      {
+        "car_id": 11,
+        "owner_id": 2,
+        "make": "Ford",
+        "model": "F-150",
+        "year": 2022,
+        "price_per_day": 95,
+        "location": "Texas, TX",
+        "availability": [
+          {"date": "2024-11-15", "available": true},
+          {"date": "2024-11-16", "available": false}
+        ],
+        "images": [
+          "https://images.pexels.com/photos/14325401/pexels-photo-14325401.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://images.pexels.com/photos/10905500/pexels-photo-10905500.jpeg?auto=compress&cs=tinysrgb&w=600"
+        ],
+        "features": ["Tow Package", "Leather Seats", "Bluetooth", "4WD"],
+        "ratings": [5, 4, 5],
+        "reviews": [],
+        "insurance_required": true
+      }
   ],
   "bookings": [
     {
