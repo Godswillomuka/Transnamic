@@ -1,310 +1,497 @@
 {
-    "users": [
-      {
-        "user_id": 1,
-        "name": "John Doe",
-        "email": "johndoe@email.com",
-        "phone": "+123456789",
-        "role": "customer", 
-        "password_hash": "hashed_password_123",
-        "created_at": "2024-01-15T08:30:00Z"
-      },
-      {
-        "user_id": 2,
-        "name": "Jane Smith",
-        "email": "janesmith@email.com",
-        "phone": "+987654321",
-        "role": "owner", 
-        "password_hash": "hashed_password_456",
-        "created_at": "2024-02-10T09:00:00Z"
-      }
-    ],
-  
-    "cars": [
-      {
-        "car_id": 1,
-        "owner_id": 2,
-        "make": "BMW",
-        "model": "M3",
-        "year": 2023,
-        "price_per_day": 120,
-        "location": "New York, NY",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true},
-          {"date": "2024-11-17", "available": false}
-        ],
-        "images": [
-          "https://example.com/bmw_m3_1.jpg",
-          "https://example.com/bmw_m3_2.jpg"
-        ],
-        "features": ["Leather Seats", "Sunroof", "GPS", "Bluetooth", "Automatic Transmission"],
-        "ratings": [5, 4, 5],
-        "reviews": [
-          {
-            "review_id": 1,
-            "user_id": 1,
-            "rating": 5,
-            "comment": "Awesome car, handles like a dream!",
-            "created_at": "2024-11-12T10:00:00Z"
-          }
-        ],
-        "insurance_required": true
-      },
-      {
-        "car_id": 2,
-        "owner_id": 2,
-        "make": "Toyota",
-        "model": "Prado TZG",
-        "year": 2020,
-        "price_per_day": 80,
-        "location": "Los Angeles, CA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": false}
-        ],
-        "images": [
-          "https://example.com/toyota_prado_tzg_1.jpg",
-          "https://example.com/toyota_prado_tzg_2.jpg"
-        ],
-        "features": ["4WD", "Roof Racks", "Bluetooth", "Automatic Transmission"],
-        "ratings": [4, 5, 4],
-        "reviews": [
-          {
-            "review_id": 2,
-            "user_id": 1,
-            "rating": 4,
-            "comment": "Great off-roading car, perfect for trips!",
-            "created_at": "2024-11-13T09:00:00Z"
-          }
-        ],
-        "insurance_required": true
-      },
-      {
-        "car_id": 3,
-        "owner_id": 2,
-        "make": "Toyota",
-        "model": "Prado TX",
-        "year": 2021,
-        "price_per_day": 75,
-        "location": "Los Angeles, CA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true}
-        ],
-        "images": [
-          "https://example.com/toyota_prado_tx_1.jpg",
-          "https://example.com/toyota_prado_tx_2.jpg"
-        ],
-        "features": ["4WD", "Bluetooth", "Automatic Transmission"],
-        "ratings": [5, 4, 5],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 4,
-        "owner_id": 2,
-        "make": "Nissan",
-        "model": "Titan",
-        "year": 2022,
-        "price_per_day": 90,
-        "location": "Texas, TX",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true}
-        ],
-        "images": [
-          "https://example.com/nissan_titan_1.jpg",
-          "https://example.com/nissan_titan_2.jpg"
-        ],
-        "features": ["4WD", "Tow Package", "Bluetooth", "Leather Seats"],
-        "ratings": [4, 5, 5],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 5,
-        "owner_id": 2,
-        "make": "Toyota",
-        "model": "Allion A18",
-        "year": 2021,
-        "price_per_day": 60,
-        "location": "San Francisco, CA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": false}
-        ],
-        "images": [
-          "https://example.com/toyota_allion_1.jpg",
-          "https://example.com/toyota_allion_2.jpg"
-        ],
-        "features": ["Bluetooth", "GPS", "Automatic Transmission"],
-        "ratings": [4, 4, 4],
-        "reviews": [],
-        "insurance_required": false
-      },
-      {
-        "car_id": 6,
-        "owner_id": 2,
-        "make": "Lexus",
-        "model": "LX600",
-        "year": 2023,
-        "price_per_day": 150,
-        "location": "Los Angeles, CA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": false}
-        ],
-        "images": [
-          "https://example.com/lexus_lx600_1.jpg",
-          "https://example.com/lexus_lx600_2.jpg"
-        ],
-        "features": ["Leather Seats", "Heated Seats", "Sunroof", "Bluetooth", "4WD"],
-        "ratings": [5, 5, 5],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 7,
-        "owner_id": 2,
-        "make": "Toyota",
-        "model": "Noah",
-        "year": 2022,
-        "price_per_day": 70,
-        "location": "Seattle, WA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true}
-        ],
-        "images": [
-          "https://example.com/toyota_noah_1.jpg",
-          "https://example.com/toyota_noah_2.jpg"
-        ],
-        "features": ["Air Conditioning", "Automatic Transmission", "Bluetooth"],
-        "ratings": [4, 5, 4],
-        "reviews": [],
-        "insurance_required": false
-      },
-      {
-        "car_id": 8,
-        "owner_id": 2,
-        "make": "Toyota",
-        "model": "Alphard",
-        "year": 2021,
-        "price_per_day": 100,
-        "location": "Seattle, WA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true}
-        ],
-        "images": [
-          "https://example.com/toyota_alphard_1.jpg",
-          "https://example.com/toyota_alphard_2.jpg"
-        ],
-        "features": ["Leather Seats", "Sunroof", "Bluetooth", "GPS"],
-        "ratings": [5, 5, 5],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 9,
-        "owner_id": 2,
-        "make": "Volvo",
-        "model": "XC90",
-        "year": 2021,
-        "price_per_day": 110,
-        "location": "San Francisco, CA",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": false}
-        ],
-        "images": [
-          "https://example.com/volvo_xc90_1.jpg",
-          "https://example.com/volvo_xc90_2.jpg"
-        ],
-        "features": ["Leather Seats", "GPS", "Bluetooth", "Heated Seats"],
-        "ratings": [5, 5, 4],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 10,
-        "owner_id": 2,
-        "make": "Ram",
-        "model": "1500",
-        "year": 2023,
-        "price_per_day": 100,
-        "location": "Texas, TX",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": true}
-        ],
-        "images": [
-          "https://example.com/ram_1500_1.jpg",
-          "https://example.com/ram_1500_2.jpg"
-        ],
-        "features": ["Leather Seats", "Tow Package", "Bluetooth", "4WD"],
-        "ratings": [5, 4, 5],
-        "reviews": [],
-        "insurance_required": true
-      },
-      {
-        "car_id": 11,
-        "owner_id": 2,
-        "make": "Ford",
-        "model": "F-150",
-        "year": 2022,
-        "price_per_day": 95,
-        "location": "Texas, TX",
-        "availability": [
-          {"date": "2024-11-15", "available": true},
-          {"date": "2024-11-16", "available": false}
-        ],
-        "images": [
-          "https://example.com/ford_f150_1.jpg",
-          "https://example.com/ford_f150_2.jpg"
-        ],
-        "features": ["Tow Package", "Leather Seats", "Bluetooth", "4WD"],
-        "ratings": [5, 4, 5],
-        "reviews": [],
-        "insurance_required": true
-      }
-    ],
-  
-    "bookings": [
-      {
-        "booking_id": 1,
-        "customer_id": 1,
-        "car_id": 1,
-        "start_date": "2024-11-15T09:00:00Z",
-        "end_date": "2024-11-16T09:00:00Z",
-        "total_price": 120,
-        "payment_status": "completed",
-        "status": "confirmed",
-        "created_at": "2024-11-14T09:00:00Z"
-      }
-    ],
-  
-    "reviews": [
-      {
-        "review_id": 1,
-        "user_id": 1,
-        "car_id": 1,
-        "rating": 5,
-        "comment": "Awesome car, handles like a dream!",
-        "created_at": "2024-11-15T10:00:00Z"
-      }
-    ],
-  
-    "payments": [
-      {
-        "payment_id": 1,
-        "user_id": 1,
-        "amount": 120,
-        "payment_method": "credit_card",
-        "payment_status": "completed",
-        "payment_date": "2024-11-14T10:00:00Z"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "user_id": 1,
+      "name": "John Doe",
+      "email": "johndoe@email.com",
+      "phone": "+123456789",
+      "role": "customer",
+      "password_hash": "hashed_password_123",
+      "created_at": "2024-01-15T08:30:00Z",
+      "id": "2a8d"
+    },
+    {
+      "user_id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@email.com",
+      "phone": "+987654321",
+      "role": "owner",
+      "password_hash": "hashed_password_456",
+      "created_at": "2024-02-10T09:00:00Z",
+      "id": "83fe"
+    },
+    {
+      "id": "ecb6",
+      "name": "GOD'SWILL OMUKA",
+      "email": "omukagodswil@gmail.com",
+      "phone": "0729489713",
+      "role": "customer",
+      "password_hash": "$2a$10$mUTmT9pPidsRiYSoFKvFGuFi7MMCHQnk78K/kGZFCzEP97TqTIDc2",
+      "created_at": "2024-11-15T23:38:23.174Z"
+    }
+  ],
+  "cars": [
+    {
+      "car_id": 1,
+      "owner_id": 2,
+      "make": "BMW",
+      "model": "M3",
+      "year": 2023,
+      "price_per_day": 120,
+      "location": "New York, NY",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        },
+        {
+          "date": "2024-11-17",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/bmw_m3_1.jpg",
+        "https://example.com/bmw_m3_2.jpg"
+      ],
+      "features": [
+        "Leather Seats",
+        "Sunroof",
+        "GPS",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [
+        {
+          "review_id": 1,
+          "user_id": 1,
+          "rating": 5,
+          "comment": "Awesome car, handles like a dream!",
+          "created_at": "2024-11-12T10:00:00Z"
+        }
+      ],
+      "insurance_required": true,
+      "id": "7c50"
+    },
+    {
+      "car_id": 2,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Prado TZG",
+      "year": 2020,
+      "price_per_day": 80,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/toyota_prado_tzg_1.jpg",
+        "https://example.com/toyota_prado_tzg_2.jpg"
+      ],
+      "features": [
+        "4WD",
+        "Roof Racks",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        4,
+        5,
+        4
+      ],
+      "reviews": [
+        {
+          "review_id": 2,
+          "user_id": 1,
+          "rating": 4,
+          "comment": "Great off-roading car, perfect for trips!",
+          "created_at": "2024-11-13T09:00:00Z"
+        }
+      ],
+      "insurance_required": true,
+      "id": "d563"
+    },
+    {
+      "car_id": 3,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Prado TX",
+      "year": 2021,
+      "price_per_day": 75,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://example.com/toyota_prado_tx_1.jpg",
+        "https://example.com/toyota_prado_tx_2.jpg"
+      ],
+      "features": [
+        "4WD",
+        "Bluetooth",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "3ba9"
+    },
+    {
+      "car_id": 4,
+      "owner_id": 2,
+      "make": "Nissan",
+      "model": "Titan",
+      "year": 2022,
+      "price_per_day": 90,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://example.com/nissan_titan_1.jpg",
+        "https://example.com/nissan_titan_2.jpg"
+      ],
+      "features": [
+        "4WD",
+        "Tow Package",
+        "Bluetooth",
+        "Leather Seats"
+      ],
+      "ratings": [
+        4,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "149c"
+    },
+    {
+      "car_id": 5,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Allion A18",
+      "year": 2021,
+      "price_per_day": 60,
+      "location": "San Francisco, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/toyota_allion_1.jpg",
+        "https://example.com/toyota_allion_2.jpg"
+      ],
+      "features": [
+        "Bluetooth",
+        "GPS",
+        "Automatic Transmission"
+      ],
+      "ratings": [
+        4,
+        4,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": false,
+      "id": "8959"
+    },
+    {
+      "car_id": 6,
+      "owner_id": 2,
+      "make": "Lexus",
+      "model": "LX600",
+      "year": 2023,
+      "price_per_day": 150,
+      "location": "Los Angeles, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/lexus_lx600_1.jpg",
+        "https://example.com/lexus_lx600_2.jpg"
+      ],
+      "features": [
+        "Leather Seats",
+        "Heated Seats",
+        "Sunroof",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "f9c4"
+    },
+    {
+      "car_id": 7,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Noah",
+      "year": 2022,
+      "price_per_day": 70,
+      "location": "Seattle, WA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://example.com/toyota_noah_1.jpg",
+        "https://example.com/toyota_noah_2.jpg"
+      ],
+      "features": [
+        "Air Conditioning",
+        "Automatic Transmission",
+        "Bluetooth"
+      ],
+      "ratings": [
+        4,
+        5,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": false,
+      "id": "0374"
+    },
+    {
+      "car_id": 8,
+      "owner_id": 2,
+      "make": "Toyota",
+      "model": "Alphard",
+      "year": 2021,
+      "price_per_day": 100,
+      "location": "Seattle, WA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://example.com/toyota_alphard_1.jpg",
+        "https://example.com/toyota_alphard_2.jpg"
+      ],
+      "features": [
+        "Leather Seats",
+        "Sunroof",
+        "Bluetooth",
+        "GPS"
+      ],
+      "ratings": [
+        5,
+        5,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "a235"
+    },
+    {
+      "car_id": 9,
+      "owner_id": 2,
+      "make": "Volvo",
+      "model": "XC90",
+      "year": 2021,
+      "price_per_day": 110,
+      "location": "San Francisco, CA",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/volvo_xc90_1.jpg",
+        "https://example.com/volvo_xc90_2.jpg"
+      ],
+      "features": [
+        "Leather Seats",
+        "GPS",
+        "Bluetooth",
+        "Heated Seats"
+      ],
+      "ratings": [
+        5,
+        5,
+        4
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "082e"
+    },
+    {
+      "car_id": 10,
+      "owner_id": 2,
+      "make": "Ram",
+      "model": "1500",
+      "year": 2023,
+      "price_per_day": 100,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": true
+        }
+      ],
+      "images": [
+        "https://example.com/ram_1500_1.jpg",
+        "https://example.com/ram_1500_2.jpg"
+      ],
+      "features": [
+        "Leather Seats",
+        "Tow Package",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "de08"
+    },
+    {
+      "car_id": 11,
+      "owner_id": 2,
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2022,
+      "price_per_day": 95,
+      "location": "Texas, TX",
+      "availability": [
+        {
+          "date": "2024-11-15",
+          "available": true
+        },
+        {
+          "date": "2024-11-16",
+          "available": false
+        }
+      ],
+      "images": [
+        "https://example.com/ford_f150_1.jpg",
+        "https://example.com/ford_f150_2.jpg"
+      ],
+      "features": [
+        "Tow Package",
+        "Leather Seats",
+        "Bluetooth",
+        "4WD"
+      ],
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "reviews": [],
+      "insurance_required": true,
+      "id": "c280"
+    }
+  ],
+  "bookings": [
+    {
+      "booking_id": 1,
+      "customer_id": 1,
+      "car_id": 1,
+      "start_date": "2024-11-15T09:00:00Z",
+      "end_date": "2024-11-16T09:00:00Z",
+      "total_price": 120,
+      "payment_status": "completed",
+      "status": "confirmed",
+      "created_at": "2024-11-14T09:00:00Z",
+      "id": "d787"
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": 1,
+      "user_id": 1,
+      "car_id": 1,
+      "rating": 5,
+      "comment": "Awesome car, handles like a dream!",
+      "created_at": "2024-11-15T10:00:00Z",
+      "id": "3601"
+    }
+  ],
+  "payments": [
+    {
+      "payment_id": 1,
+      "user_id": 1,
+      "amount": 120,
+      "payment_method": "credit_card",
+      "payment_status": "completed",
+      "payment_date": "2024-11-14T10:00:00Z",
+      "id": "7658"
+    }
+  ]
+}

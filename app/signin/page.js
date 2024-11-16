@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Navbar from '@/components/Navbar';
+import bcrypt from 'bcryptjs'; // A library to hash the password
 
 export default function SignUp() {
   // State for form fields
@@ -10,9 +10,9 @@ export default function SignUp() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [contact, setContact] = useState('');
-  const [idNumber, setIdNumber] = useState('');
-  const [dob, setDob] = useState('');
+  const [role, setRole] = useState('customer'); // Default role to customer
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -25,18 +25,21 @@ export default function SignUp() {
     }
 
     // Basic validation for required fields
-    if (!firstName || !lastName || !contact || !idNumber || !dob) {
+    if (!firstName || !lastName || !contact || !email || !password) {
       setError('Please fill in all fields');
       return;
     }
+
+    // Password hashing (this should be done on the server in a production app)
+    const hashedPassword = bcrypt.hashSync(password, 10);
 
     // Create user object to send to the backend
     const newUser = {
       name: `${firstName} ${lastName}`,
       email: email,
       phone: contact,
-      role: 'customer',  // Or set dynamically if needed
-      password_hash: password, // Store hashed password in a real app (not recommended to store plain text)
+      role: role,
+      password_hash: hashedPassword, // Storing the hashed password
       created_at: new Date().toISOString(),
     };
 
@@ -49,21 +52,23 @@ export default function SignUp() {
         },
         body: JSON.stringify(newUser),
       });
+      console.log(response);
 
       if (response.ok) {
         const data = await response.json();
         console.log('User created successfully:', data);
         
-        // Clear form fields and error state on success
-        setError('');
+        // Show success message
+        setSuccess('User created successfully!');
+        
+        // Clear form fields on success
         setEmail('');
         setPassword('');
         setConfirmPassword('');
         setFirstName('');
         setLastName('');
         setContact('');
-        setIdNumber('');
-        setDob('');
+        setRole('customer');
       } else {
         const errorData = await response.json();
         setError('Failed to create user: ' + errorData.message);
@@ -76,10 +81,13 @@ export default function SignUp() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-black rounded-r-md bg-pink-400 rounded-lg">SignUp</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center text-black bg-pink-400 rounded-lg p-2">SignUp</h2>
 
         {/* Show error message if there's any */}
         {error && <div className="mb-4 text-red-600 text-sm text-center">{error}</div>}
+        
+        {/* Show success message if there's any */}
+        {success && <div className="mb-4 text-green-600 text-sm text-center">{success}</div>}
 
         <form onSubmit={handleSubmit}>
           {/* First Name */}
@@ -126,32 +134,20 @@ export default function SignUp() {
             />
           </div>
 
-          {/* ID Number */}
+          {/* Role */}
           <div className="mb-4">
-            <label htmlFor="idNumber" className="block text-sm font-medium text-gray-700">ID Number:</label>
-            <input
-              type="text"
-              id="idNumber"
-              name="idNumber"
-              value={idNumber}
-              onChange={(e) => setIdNumber(e.target.value)}
+            <label htmlFor="role" className="block text-sm font-medium text-gray-700">Role:</label>
+            <select
+              id="role"
+              name="role"
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
               required
               className="mt-1 p-2 w-full border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
-          {/* Date of Birth */}
-          <div className="mb-4">
-            <label htmlFor="dob" className="block text-sm font-medium text-gray-700">Date of Birth:</label>
-            <input
-              type="date"
-              id="dob"
-              name="dob"
-              value={dob}
-              onChange={(e) => setDob(e.target.value)}
-              required
-              className="mt-1 p-2 w-full border text-black rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+            >
+              <option value="customer">Customer</option>
+              <option value="owner">Owner</option>
+            </select>
           </div>
 
           {/* Email */}
