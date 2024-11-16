@@ -4,12 +4,14 @@ import Image from 'next/image';
 
 const CarsPage = () => {
   const [cars, setCars] = useState([]); 
+
   useEffect(() => {
     fetch('http://localhost:3000/cars') 
       .then((response) => response.json())
       .then((data) => setCars(data))
       .catch((error) => console.error('Error fetching cars:', error));
   }, []);
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-6">Available Cars</h1>
@@ -20,7 +22,7 @@ const CarsPage = () => {
             className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition"
           >
             <Image
-              src={car.images?.[0] || '/placeholder.png'} 
+              src={car.images?.[0] || '/placeholder.png'} // Fallback to placeholder image
               alt={`${car.make} ${car.model}`}
               width={300}
               height={200}
@@ -50,7 +52,7 @@ const CarsPage = () => {
       </div>
     </div>
   );
-}
+};
 
-export default page
+export default CarsPage;
 
