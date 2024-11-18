@@ -80,7 +80,7 @@ const CarsPage = () => {
       <Navbar />
       
       {/* Page Title */}
-      <h1 className="text-3xl font-bold text-center text-white mb-8">Available Cars</h1>
+      <h1 className="text-3xl font-bold text-center text-black mb-8">Available Cars</h1>
 
       {/* Search Section */}
       <div className="flex justify-center mb-8">
@@ -90,7 +90,7 @@ const CarsPage = () => {
             placeholder="Search by make, model, year"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-3 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+            className="w-full p-3 rounded-lg border border-black-500 text-black focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
           />
           <button
             type="submit"
@@ -103,28 +103,28 @@ const CarsPage = () => {
 
       {/* Add Car Form */}
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-12">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-6">Add a New Car</h2>
+        <h2 className="text-2xl font-semibold text-black-600 mb-6">Add a New Car</h2>
         <form onSubmit={handleAddCar} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="url" className="block text-gray-900">Car URL</label>
+              <label htmlFor="url" className="block text-black">Car URL</label>
               <input
                 type="url"
                 id="url"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-black-500 text-black"
                 required
               />
             </div>
             <div>
-              <label htmlFor="carType" className="block text-gray-900">Car Type</label>
+              <label htmlFor="carType" className="block text-black">Car Type</label>
               <input
                 type="text"
                 id="carType"
                 value={carType}
                 onChange={(e) => setCarType(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
@@ -132,24 +132,24 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="carMake" className="block text-gray-900">Car Make</label>
+              <label htmlFor="carMake" className="block text-black">Car Make</label>
               <input
                 type="text"
                 id="carMake"
                 value={carMake}
                 onChange={(e) => setCarMake(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
             <div>
-              <label htmlFor="carModel" className="block text-gray-900">Car Model</label>
+              <label htmlFor="carModel" className="block text-black">Car Model</label>
               <input
                 type="text"
                 id="carModel"
                 value={carModel}
                 onChange={(e) => setCarModel(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
@@ -157,24 +157,24 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="carYear" className="block text-gray-900">Car Year</label>
+              <label htmlFor="carYear" className="block text-black">Car Year</label>
               <input
                 type="number"
                 id="carYear"
                 value={carYear}
                 onChange={(e) => setCarYear(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
             <div>
-              <label htmlFor="carLocation" className="block text-gray-900">Car Location</label>
+              <label htmlFor="carLocation" className="block text-black">Car Location</label>
               <input
                 type="text"
                 id="carLocation"
                 value={carLocation}
                 onChange={(e) => setCarLocation(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
@@ -182,24 +182,24 @@ const CarsPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="pricePerDay" className="block text-gray-900">Price Per Day ($)</label>
+              <label htmlFor="pricePerDay" className="block text-black">Price Per Day ($)</label>
               <input
                 type="number"
                 id="pricePerDay"
                 value={pricePerDay}
                 onChange={(e) => setPricePerDay(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 required
               />
             </div>
             <div>
-              <label htmlFor="features" className="block text-gray-900">Features</label>
+              <label htmlFor="features" className="block text-black">Features</label>
               <input
                 type="text"
                 id="features"
                 value={features}
                 onChange={(e) => setFeatures(e.target.value)}
-                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300"
+                className="w-full px-4 py-2 mt-2 rounded-lg border border-gray-300 text-black"
                 placeholder="Comma separated"
                 required
               />
@@ -208,7 +208,7 @@ const CarsPage = () => {
 
           <button
             type="submit"
-            className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+            className="w-full py-2 bg-blue-500 text-black rounded-lg hover:bg-blue-600"
           >
             Add Car
           </button>
@@ -226,15 +226,15 @@ const CarsPage = () => {
               height={200}
               className="rounded-lg object-cover"
             />
-            <h2 className="text-xl font-semibold mt-4 text-gray-900">
+            <h2 className="text-xl font-semibold mt-4 text-black-500">
               {car.make} {car.model}
             </h2>
-            <p className="text-sm text-gray-700">Year: {car.year}</p>
-            <p className="text-sm text-gray-700">Location: {car.location}</p>
-            <p className="text-sm text-gray-700">Price/Day: ${car.price_per_day}</p>
+            <p className="text-sm text-black-500">Year: {car.year}</p>
+            <p className="text-sm text-black-500">Location: {car.location}</p>
+            <p className="text-sm text-gray-600">Price/Day: ${car.price_per_day}</p>
 
             <div className="mt-4">
-              <p className="text-sm font-medium text-gray-900">Features:</p>
+              <p className="text-sm font-medium">Features:</p>
               <ul className="text-sm text-gray-700 list-disc list-inside">
                 {car.features?.slice(0, 3).map((feature, index) => (
                   <li key={index}>{feature}</li>
